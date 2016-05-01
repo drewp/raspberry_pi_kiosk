@@ -1,8 +1,12 @@
 # raspberry_pi_kiosk
 
-Program to switch a [raspberry pi](https://www.raspberrypi.org/) display on when a motion sensor is
-activated, e.g. for a kiosk screen. Written in [Julia](http://julialang.org/) only because I 
-wanted to learn Julia today.
+Program to switch a [raspberry pi](https://www.raspberrypi.org/)
+display on when a motion sensor is activated, e.g. for a kiosk
+screen.
+
+Written in [Julia](http://julialang.org/) only because I wanted to
+learn Julia today. It might have been a bad choice since it takes
+150MB of RAM, but presumably most of that would swap out if it had to.
 
 Usage
 -----
