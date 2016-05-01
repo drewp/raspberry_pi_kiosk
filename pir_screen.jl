@@ -44,6 +44,7 @@ end
 
 
 function main(motionSensorGpioPin::Int, minimumScreenOnTime::Dates.Second)
+    run(`xset s off`)
     run(`xset dpms 0 0 0`)
     gpio = Gpio(motionSensorGpioPin)
     power = ScreenPower()
