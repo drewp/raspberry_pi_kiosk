@@ -37,8 +37,7 @@ immutable Gpio
 end
 
 function getState(gpio::Gpio)
-    f = open(joinpath(gpio.gpio_dir, "value"))
-    parse(Int, strip(readstring(f)))
+    parse(Int, strip(readstring(joinpath(gpio.gpio_dir, "value"))))
 end
 
 
